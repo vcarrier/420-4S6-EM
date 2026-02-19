@@ -1,4 +1,12 @@
-﻿Import-Module ActiveDirectory
+﻿###############################################################################
+## Script pour créer les comptes utilisateurs du TP1 dans le cadre du cours
+## 420-4S6-EM Serveurs 3: Administration centralisée
+##
+## Auteur: Vincent Carrier
+## Date:   19 février 2026
+###############################################################################
+
+Import-Module ActiveDirectory
 
 $data = ConvertFrom-Csv @"
 noEmpl,givenName,initials,sn,sAMAccountName,upnPrefix,description,dept
